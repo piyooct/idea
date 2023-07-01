@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>パチンコハマリ計算</title>
+    <script src="hamari.js"></script>
+  </head>
+  <body>
+    <figure class="wp-block-table aligncenter">
+      <table style="width:330px;">
+        <thead>
+          <tr>
+            <th>大当り確率</th>
+            <th>回転数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>
+             <input type="text" id="bunshi" aria-label="input" maxlength="1" onchange="calcHitRate();" value="1" style="height:40px;width:40px;"><span style="font-size:12pt;"> ／ </span><input type="text" placeholder="分母" id="bunbo" aria-label="input" maxlength="7" onchange="calcHitRate();" style="height:40px;width:95px;">
+           </td>
+           <td>
+             <input type="text" placeholder="回転" maxlength="5" id="kaitensu" aria-label="input" onchange="calcHitRate();" style="height:40px;width:90px;"><span style="font-size:12pt;"> 回転 </span>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+    <figure class="wp-block-table aligncenter" style="margin-top:-10px;">
+      <table style="width:330px;">
+        <thead>
+          <tr>
+            <th>ハマる確率</th>
+            <th>当たる確率</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" id="ataranai" aria-label="input" onchange="calcHitRate();" readonly="1" style="height:40px;width:120px;"><span style="font-size:12pt;"> % </span>
+            </td>
+            <td>
+              <input type="text" id="ataru" aria-label="input" onchange="calcHitRate();" readonly="1" style="height:40px;width:120px;"><span style="font-size:12pt;"> %</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  </body>
+</html>
