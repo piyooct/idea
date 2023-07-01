@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>パチンコ継続率計算</title>
+    <script src="keizokuritsu.js"></script>
+  </head>
+  <body>
+    <figure class="wp-block-table aligncenter">
+      <table>
+        <thead>
+          <tr>
+            <th>継続率(%)</th>
+            <th>連チャン数</th>
+            <th>連チャン率(%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" placeholder="率" id="keizoku" aria-label="input" maxlength="5" onchange="calcKakuritu();" style="height:50px;width:75px;font-size:12pt;"><span style="font-size:12pt;"> %</span>
+            </td>
+            <td>
+              <input type="text" placeholder="連" maxlength="3" id="renchan" aria-label="input" onchange="calcKakuritu();" style="height:50px;width:65px;font-size:12pt;"><span style="font-size:12pt;"> 連</span>
+            </td>
+            <td>
+              <input type="text" id="kakuritsu" aria-label="input" onchange="calcKakuritu();" readonly="1" style="height:50px;width:120px;"><span style="font-size:12pt;"> %</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  </body>
+</html>
